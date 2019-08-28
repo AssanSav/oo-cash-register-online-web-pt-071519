@@ -13,6 +13,6 @@ class CashRegister
  end
  
  def apply_discount 
-   @total = {@total * 0,2}.to_i
+   @total = (@total * 0,2).to_i
  end
 end
