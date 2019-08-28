@@ -14,7 +14,7 @@ class CashRegister
  
  def apply_discount 
    if discount 
-   @total = @total * 0,2
+   @total -= @total * 0,2
   end
  end
 end
