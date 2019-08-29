@@ -3,9 +3,9 @@ require 'pry'
 class CashRegister
  attr_accessor :discount, :total
  
- def initialize(dicount)
+ def initialize(dicount = nil)
    @total = 0
-   @discount = 20
+   @discount = discount
    @item = []
  end
  
