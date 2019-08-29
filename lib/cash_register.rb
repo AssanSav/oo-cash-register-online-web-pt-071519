@@ -21,5 +21,6 @@ class CashRegister
  def apply_discount
    if discount
      @total = (self.total.to_f * discount/ 100).to_i
-     
+   end
+ end
 end
