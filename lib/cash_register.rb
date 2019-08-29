@@ -19,7 +19,7 @@ class CashRegister
  
  def apply_discount 
  if discount 
-    self.total -= selftotal * 20/100
+    self.total -= self.total * 20/100
    puts "After the discount, the total comes to $#{@total}."
  else 
    puts "There is no discount to apply."
