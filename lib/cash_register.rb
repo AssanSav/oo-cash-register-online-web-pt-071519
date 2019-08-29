@@ -25,4 +25,13 @@ class CashRegister
      "There is no discount to apply."
    end
  end
+ 
+ def items 
+   @items 
+ end
+ 
+ def void_last_transaction
+   @items.pop
+   @total -= @last_transaction
+ end
 end
