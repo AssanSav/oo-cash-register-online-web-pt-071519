@@ -5,7 +5,7 @@ class CashRegister
  
  def initialize(dicount = nil)
    @total = 0
-   @discount = discount
+   @discount = 20
    @item = []
  end
  
@@ -19,7 +19,7 @@ class CashRegister
  
  def apply_discount 
  if discount 
-    @total -= (@total.to_f * discount/100).to_i
+    self.total -= (self.total.to_f * discount/100).to_i
     "After the discount, the total comes to $#{@total}."
  else 
     "There is no discount to apply."
